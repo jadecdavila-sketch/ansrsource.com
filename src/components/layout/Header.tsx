@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import { basePath } from "@/lib/tokens";
 
 const navLinks = [
   { label: "About Us", href: "#about" },
@@ -18,7 +19,7 @@ export function Header() {
       >
         <Link href="/" aria-label="ansrsource home">
           <Image
-            src="/logos/ansrsource-logo.png"
+            src={`${basePath}/logos/ansrsource-logo.png`}
             alt="ansrsource logo"
             width={180}
             height={40}

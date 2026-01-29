@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BrandName } from "@/components/ui/BrandName";
+import { basePath } from "@/lib/tokens";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         {/* Logo and tagline */}
         <div className="mb-8">
           <Image
-            src="/logos/ansrsource-logo.png"
+            src={`${basePath}/logos/ansrsource-logo.png`}
             alt="ansrsource logo"
             width={160}
             height={35}
